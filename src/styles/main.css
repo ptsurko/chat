@@ -577,13 +577,21 @@ ul {
 
 .headerBar {
   background: #000;
-  display: block; }
+  display: flex; }
 
 .headerBar-logo {
   padding: 15px 0 13px 14px; }
   @media (min-width: 500px) {
     .headerBar-logo {
       padding: 15px 0 13px 20px; } }
+
+.headerBar-nav {
+  align-items: center;
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-right: 54px; }
 
 .chat-container {
   padding: 30px 20px;
@@ -653,6 +661,40 @@ ul {
   color: #00a2eb;
   border-radius: 75px;
   border: solid 1.5px #00a2eb; }
+
+.button-signup {
+  background-color: #fe5500;
+  border: 0;
+  border-radius: 5px;
+  color: #fff;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 300;
+  margin-right: 20px;
+  padding: 10px 20px;
+  text-decoration: none; }
+  .button-signup:active, .button-signup:focus, .button-signup:hover {
+    background-color: #d84800 !important;
+    color: #fff;
+    text-decoration: none; }
+
+.button-github {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 300;
+  margin-right: 30px;
+  opacity: .8;
+  text-decoration: none; }
+  .button-github:active, .button-github:focus, .button-github:hover {
+    background-color: transparent !important;
+    color: #fff;
+    opacity: 1;
+    text-decoration: none; }
+  .button-github .github-icon {
+    fill: white;
+    height: 36px;
+    margin-left: 10px;
+    width: 36px; }
 
 .icon-backArrow {
   transform: rotate(90deg); }

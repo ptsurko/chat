@@ -6,6 +6,8 @@ $room-text-color: #262626;
 $room-prefix-color: #888;
 $primary-blue-light: #35b8ff;
 $primary-blue: #00a2eb;
+$signup-color: #fe5500;
+$signup-color-dark: #d84800;
 
 $breakpoint-desktop: 500px;
 
@@ -86,7 +88,7 @@ ul {
 
 .headerBar {
   background: #000;
-  display: block;
+  display: flex;
 }
 
 .headerBar-logo {
@@ -95,6 +97,15 @@ ul {
   @include breakpoint($breakpoint-desktop) {
     padding: 15px 0 13px 20px;
   }
+}
+
+.headerBar-nav {
+  align-items: center;
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-right: 54px;
 }
 
 .chat-container {
@@ -166,6 +177,52 @@ ul {
   color: $primary-blue;
   border-radius: 75px;
   border: solid 1.5px $primary-blue;
+}
+
+.button-signup {
+  background-color: $signup-color;
+  border: 0;
+  border-radius: 5px;
+  color: #fff;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 300;
+  margin-right: 20px;
+  padding: 10px 20px;
+  text-decoration: none;
+
+  &:active,
+  &:focus,
+  &:hover {
+    background-color: $signup-color-dark !important;
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+.button-github {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 300;
+  margin-right: 30px;
+  opacity: .8;
+  text-decoration: none;
+
+  &:active,
+  &:focus,
+  &:hover {
+    background-color: transparent !important;
+    color: #fff;
+    opacity: 1;
+    text-decoration: none;
+  }
+
+  .github-icon{
+    fill: white;
+    height: 36px;
+    margin-left: 10px;
+    width: 36px;
+  }
 }
 
 .copyButton {
